@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estética Canina YHWH</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🐾 Estética Canina <span>YHWH</span></h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#cita">Agendar cita</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <h2>¡Consentimos a tu peludo con amor y estilo!</h2>
+    <button onclick="scrollToSection('cita')">Agendar cita</button>
+    <button onclick="scrollToSection('catalogo')">Ver catálogo</button>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="cards">
+      <div class="card">Baño y secado</div>
+      <div class="card">Corte de pelo</div>
+      <div class="card">Limpieza dental</div>
+      <div class="card">Corte de uñas</div>
+    </div>
+  </section>
+
+  <section id="cita">
+    <h2>Agendar cita</h2>
+    <form id="formCita">
+      <input type="text" id="nombreDuenio" placeholder="Tu nombre" required />
+      <input type="text" id="nombrePerro" placeholder="Nombre del perrito" required />
+      <input type="tel" id="telefono" placeholder="Teléfono o WhatsApp" required />
+      <input type="datetime-local" id="fecha" required />
+      <select id="servicio">
+        <option value="Baño y corte">Baño y corte</option>
+        <option value="Corte de uñas">Corte de uñas</option>
+        <option value="Limpieza dental">Limpieza dental</option>
+      </select>
+      <button type="submit">Enviar por WhatsApp</button>
+    </form>
+  </section>
+
+  <section id="catalogo">
+    <h2>Catálogo de productos</h2>
